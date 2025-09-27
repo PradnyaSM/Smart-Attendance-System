@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Years Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+            gap: 10px;
+            justify-items: center;
+        }
+        .button-grid a button {
+            background-color: #ffffff;
+            color: #4285f4;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 200px; /* Set a max width to keep button sizes consistent */
+        }
+        .button-grid a button:hover {
+            background-color: #004e92;
+            color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classes</h1>
+        <div class="button-grid">
+            <a href="{{ url_for('first_year') }}"><button>First Year A</button></a>
+            <a href="#"><button>First Year B</button></a>
+            <a href="#"><button>First Year C</button></a>
+            <a href="#"><button>Second Year A</button></a>
+            <a href="#"><button>Second Year B</button></a>
+            <a href="#"><button>Second Year C</button></a>
+            <a href="#"><button>Third Year A</button></a>
+            <a href="#"><button>Third Year B</button></a>
+            <a href="#"><button>Third Year C</button></a>
+            <a href="#"><button>Final Year A</button></a>
+            <a href="#"><button>Final Year B</button></a>
+            <a href="#"><button>Final Year C</button></a>
+        </div>
+    </div>
+</body>
+</html>
